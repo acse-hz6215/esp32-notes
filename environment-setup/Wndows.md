@@ -7,6 +7,3 @@ Please also refer to [Mair's video tutorial for Windows](https://learnesp32.com/
 # Install ESP-IDF on Windows via WSL2 
 Please refer to Hwan's documentation [doc-tinyml](https://github.com/MACSO-AI/doc-tinyml/blob/main/main.pdf)
 
-behlld
-instell device 
-

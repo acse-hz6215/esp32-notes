@@ -11,7 +11,7 @@ Check your git version
 git --version
 ```
 
-Intsall HomeBrew
+Install HomeBrew
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -97,7 +97,7 @@ which -a bash
 /usr/local/bin/bash # new version
 
 ````
-To use the latest Bash shell as the default shell, you need to add its path to `/ect/shells` file
+To use the latest Bash shell as the default shell, you need to add its path to`/ect/shells` file
 ```bash
 sudo vim /etc/shells # edit file via vim
 ```
@@ -112,7 +112,7 @@ Add `/usr/local/bin/bash` shell to its content
 /usr/local/bin/bash
 ```
 
-Finally run the following command to set the new version as default shell 
+Finally run the following command to set the new version as the default shell 
 ```bash
 chsh -s /usr/local/bin/bash
 ```
@@ -123,7 +123,10 @@ bash-5.0$ echo $BASH_VERSION
 5.0.0(2)-release
 ```
 
-To exit bash simply type `exit`
+To exit bash simply type 
+```
+exit
+```
 
 </details>
 
@@ -132,18 +135,13 @@ To exit bash simply type `exit`
 <details><summary>Details (click to expand...)</summary>
 The installed tools are not yet added to the PATH environment variable. To make the tools usable from the command line, some environment variables must be set
 
-```bash
-. $HOME/esp/esp-idf/export.sh # Note the space between the leading dot and the path!
-```
-
-
-The output look like this:
+The output looks like this
 
 <img src = "./image/exp-var.png">
 </details>
 
 
-# Start an exmaple project
+# Start an example project
 Copy the project `get-started/hello_world` to `~/esp `directory
 ```sh
 cd ~/esp
