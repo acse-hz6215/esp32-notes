@@ -9,11 +9,11 @@
 >// format - format string
 >```
 
-The logging macros are in `"esp_log.h"`, for example, we can log an error like this:
+Need to include the header file `"esp_log.h"`, for example, we can log an error like this:
 
 
 ```c
-// use the following code in main.c in the starter template
+// copy the following code to main.c in the starter template
 #include <stdio.h>
 #include "esp_log.h"
 
@@ -24,7 +24,8 @@ void app_main(void)
 ```
 
 ```sh
-idf.py flash monitor #flash the device
+#flash the device
+idf.py flash monitor 
 ```
 
 
@@ -102,9 +103,8 @@ Output:
 
 <img src = "./image/log-func.png" width = "300">
 
-
 ## printf
-Another note is that `ESP_LOG` also supports format print:
+Note that `ESP_LOG` also supports format print:
 ```c
 void app_main(void)
 {

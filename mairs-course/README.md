@@ -7,14 +7,15 @@ Here's is a summary of Mair's course notes
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Environment Setup](#environment-setup)
-  - [Flash command summary](#flash-command-summary)
+  - [Flash commands](#flash-commands)
   - [Starter template](#starter-template)
 - [Introduction](#introduction)
+  - [Logging](#logging)
 
 
 # Environment Setup 
   
-## Flash command summary
+## Flash commands
 ```sh
 #check serial ports
 ls /dev/cu.*   
@@ -51,3 +52,4 @@ idf.py fullclean
 Here's an ESP32 starter template on Github: https://github.com/Mair/esp32-course/tree/master/_2_template/esp32_starter_template
 
 # Introduction 
+## Logging
