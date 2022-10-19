@@ -72,7 +72,7 @@ cd ~/esp/esp-idf
  </details>
  
 ## Set up the environment variables
-### Make sure you have the latest version of Bash
+### 1. Make sure you have the latest version of Bash
 >When exporting environment variables, you make get the following warning if your bash version is outdated 
 >```
 >WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)-release!
@@ -130,10 +130,14 @@ exit
 
 </details>
 
-### Export environment variables
+### 2. Export environment variables
 
 <details><summary>Details (click to expand...)</summary>
 The installed tools are not yet added to the PATH environment variable. To make the tools usable from the command line, some environment variables must be set
+
+```sh
+. $HOME/esp/esp-idf/export.sh
+```
 
 The output looks like this
 
@@ -157,11 +161,17 @@ Now plug in your ESP32 and run the above command again, you should see a new por
 <img src ="./image/serial-port.png">
 
 ## Build your project
-To test this project, run
+First, make sure you have set the environment variables (See [Export environment variables](#export-environment-variables))
+ 
+ If you haven't already done so, run 
+```sh
+. $HOME/esp/esp-idf/export.sh
+```
+
+To build the example project, run
 ```bash
 idf.py build 
 ```
-Note that to run this you need to export env variables first! See [Export environment variables](#export-environment-variables)
 
 If succeed, you should see this 
 
@@ -176,11 +186,11 @@ Replace `PORT` with your ESP32 board’s USB port name, for example in my case i
 ```sh
 idf.py -p /dev/cu.usbserial-027A3CE1 flash monitor
 ```
-Note that I also added `monitor` command here in order to monitor the flashing process
+Note that I also added `monitor` command in order to monitor the flashing process
 
 <img src = "./image/flash-device.png">
 
 Finally to terminate the process
 ```sh
-Control + []
+Control + ]
 ```

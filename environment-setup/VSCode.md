@@ -1,7 +1,11 @@
 # Install ESP-IDF Extension from VSCode
 
 ## For Windows     
-Install ESP-IDF VSCode Extension, and follow the [Youtube tutorial](https://www.youtube.com/watch?v=Lc6ausiKvQM) to configure the extension. It's recommended to install the ESP-IDF under the User folder, for example:
+
+
+Install ESP-IDF from VSCode Extension Manager, follow the [Youtube tutorial](https://www.youtube.com/watch?v=Lc6ausiKvQM) to configure the extension
+   
+It's recommended to install the ESP-IDF under the User folder, for example
 
 >Will install ESP-IDF master into:
 >```
