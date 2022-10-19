@@ -1,5 +1,5 @@
 # Random Number
-Need to include the the following two header files
+Need to include the following two header files
 ```c
 #include "esp_system.h"
 #include "esp_random.h"
@@ -26,7 +26,7 @@ Output:
 
 <img src = "./image/rand-num.png" width = "300">
 
-Note that the above number is really large, we can set a range for random number
+Note that the above number is really large, we can set a range for a random number
 
 The following dice example set range for rand from int 1 - int 6
 

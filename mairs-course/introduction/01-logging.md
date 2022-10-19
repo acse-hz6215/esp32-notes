@@ -40,7 +40,7 @@ Other log options:
 - `ESP_LOGD` - debug
 - `ESP_LOGV` - verbose
 
-## Set the logging level 
+## Set logging level 
 ### Option 1 - menuconfig
 Note that `ESP_LOGD` and `ESP_LOGV` are disabled by default, to change settings, run 
 ```
