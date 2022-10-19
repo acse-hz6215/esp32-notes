@@ -10,7 +10,10 @@
 >```
 
 The logging macros are in `"esp_log.h"`, for example, we can log an error like this:
+
+
 ```c
+// use the following code in main.c in the starter template
 #include <stdio.h>
 #include "esp_log.h"
 
@@ -19,7 +22,13 @@ void app_main(void)
     ESP_LOGE("LOG", "This is an error"); 
 }
 ```
-Here is the output
+
+```sh
+idf.py flash monitor #flash the device
+```
+
+
+Output:
 <img src ="./image/logging.png">
 
 Other log options:
@@ -89,17 +98,31 @@ void app_main(void)
     ESP_LOGV("TAG 2", "This is an verbose");
 }
 ```
-Here is the output 
+Output:
 
 <img src = "./image/log-func.png" width = "300">
 
 
+## printf
+Another note is that `ESP_LOG` also supports format print:
+```c
+void app_main(void)
+{
+  // set logging level to info
+  esp_log_level_set("LOGGING", ESP_LOG_INFO);
 
-
-To flash device, run 
-```sh
-idf.py flash monitor 
+  int myNumber = 0; //increment number
+  ESP_LOGE("LOGGING", "This is an error %d", myNumber++);
+  ESP_LOGW("LOGGING", "This is a warning %d", myNumber++);
+  ESP_LOGI("LOGGING", "This is a info %d", myNumber++);
+  ESP_LOGD("LOGGING", "This is a debug %d", myNumber++);
+  ESP_LOGV("LOGGING", "This is verbose %d", myNumber++);
+}
 ```
+Output:
+
+<img src = "./image/log-printf.png">
+
 
 
 # Reference
