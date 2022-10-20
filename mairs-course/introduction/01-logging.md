@@ -29,7 +29,7 @@ idf.py flash monitor
 ```
 
 
-Output:
+Output
 <img src ="./image/logging.png">
 
 Other log options:
@@ -119,7 +119,7 @@ void app_main(void)
   ESP_LOGV("LOGGING", "This is verbose %d", myNumber++);
 }
 ```
-Output:
+Output
 
 <img src = "./image/log-printf.png">
 

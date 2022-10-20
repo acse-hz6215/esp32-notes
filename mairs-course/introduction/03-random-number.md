@@ -4,6 +4,7 @@ Need to include the following two header files
 #include "esp_system.h"
 #include "esp_random.h"
 ```
+Example
 ```c
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
@@ -22,7 +23,7 @@ void app_main(void)
     }
 }
 ```
-Output: 
+Output
 
 <img src = "./image/rand-num.png" width = "300">
 
@@ -43,9 +44,9 @@ The following dice example set range for rand from int 1 - int 6
 
 int dice_role() {
     int random = esp_random(); // get random number 
-    int positiveNumber = abs(random); // make sure it if only positive
+    int positiveNumber = abs(random); // make sure it is only positive
     
-    // modular ensures output from 0-5, so we need to plus 1  
+    // modular ensures n % 6 = 0-5, so we need to plus 1  
     int diceNumber = (positiveNumber % 6) + 1; 
     return diceNumber;
 }
@@ -59,6 +60,6 @@ void app_main(void)
 }
 ```
 
-Output:
+Output
 
 <img src = "./image/rand-dice.png">

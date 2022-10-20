@@ -9,7 +9,7 @@ The function `vTaskDelay`（v means void）can delay a task for a given number o
 
 The constant `portTICK_PERIOD_MS` can be used to convert a time from ticks to milliseconds
 
-For example
+Example
 ```c
 #include <stdio.h>
 #include "esp_log.h"
@@ -28,7 +28,7 @@ void app_main(void)
 }
 ```
 
-Output:
+Output
 
 <img src = "./image/delay.png">
 
