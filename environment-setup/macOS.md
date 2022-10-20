@@ -34,7 +34,6 @@ brew install ccache
 >xcode-select --install
 >```
 
-
 </details>
 
 ## Install Python3
