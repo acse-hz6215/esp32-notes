@@ -72,7 +72,7 @@ cd ~/esp/esp-idf
  
 ## Set up the environment variables
 ### 1. Make sure you have the latest version of Bash
-When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
+>When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
 
 <details><summary>Details (click to expand...)</summary>
 
