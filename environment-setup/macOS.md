@@ -1,6 +1,9 @@
+# Install ESP-IDF on macOS
+- Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Linux and macOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
 
-# Install prerequisites 
-## Install Git, HomeBrew, CMake & Ninja build
+
+## Install prerequisites 
+### Install Git, HomeBrew, CMake & Ninja build
 <details><summary>Details (click to expand...)</summary>
 
 Check your git version 
@@ -33,7 +36,7 @@ brew install ccache
 
 </details>
 
-## Install Python3
+### Install Python3
 <details><summary>Details (click to expand...)</summary>
 
 Check if you already have python3 installed 
@@ -46,7 +49,7 @@ brew install python3
 ```
 </details>
 
-# Get ESP-IDF
+## Get ESP-IDF
 Navigate to your installation directory 
 ```bash
 mkdir -p ~/esp
@@ -57,7 +60,7 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 >ESP-IDF will be downloaded into `~/esp/esp-idf`
 
 
-# Set up ESP-IDF-related tools
+## Set up ESP-IDF-related tools
 To install tools for ESP32
 
 ```sh
@@ -67,8 +70,8 @@ cd ~/esp/esp-idf
 > For more tools installation options please refer to their [official document](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
 
  
-# Set up the environment variables
-## 1. Make sure you have the latest version of Bash
+## Set up the environment variables
+### 1. Make sure you have the latest version of Bash
 >When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
 
 <details><summary>Details (click to expand...)</summary>
@@ -122,7 +125,7 @@ exit
 
 </details>
 
-## 2. Export environment variables
+### 2. Export environment variables
 
 <details><summary>Details (click to expand...)</summary>
 The installed tools are not yet added to the PATH environment variable. To make the tools usable from the command line, some environment variables must be set
@@ -165,7 +168,7 @@ To build the example project, run
 idf.py build 
 ```
 
-If succeed, you should see this 
+If succeed, you should see the following output
 
 <img src ="./image/idf-build.png">
 
@@ -186,6 +189,3 @@ Finally to terminate the process
 ```sh
 Control + ]
 ```
-
-# Reference
-Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Linux and macOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
