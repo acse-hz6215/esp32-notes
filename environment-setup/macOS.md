@@ -2,8 +2,8 @@
 # Install ESP-IDF on macOS
 Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Linux and macOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
 
-
-## Install Git, HomeBrew, CMake & Ninja build
+## Install prerequisites 
+### Install Git, HomeBrew, CMake & Ninja build
 <details><summary>Details (click to expand...)</summary>
 
 Check your git version 
@@ -36,7 +36,7 @@ brew install ccache
 
 </details>
 
-## Install Python3
+### Install Python3
 <details><summary>Details (click to expand...)</summary>
 
 Check if you already have python3 installed 
@@ -47,6 +47,8 @@ If you don't have python, install it via HomeBrew
 ```
 brew install python3
 ```
+</details>
+
 ## Get ESP-IDF
 Navigate to your installation directory 
 ```bash
@@ -56,11 +58,9 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 ```
 
 >ESP-IDF will be downloaded into `~/esp/esp-idf`
- </details>
+
 
 ## Set up ESP-IDF-related tools
-<details><summary>Details (click to expand...)</summary>
-
 To install tools for ESP32
 
 ```sh
@@ -68,15 +68,11 @@ cd ~/esp/esp-idf
 ./install.sh esp32
 ```
 > For more tools installation options please refer to their [official document](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
- </details>
+
  
 ## Set up the environment variables
 ### 1. Make sure you have the latest version of Bash
->When exporting environment variables, you make get the following warning if your bash version is outdated 
->```
->WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)-release!
->```
->To fix this you need to update your bash
+When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
 
 <details><summary>Details (click to expand...)</summary>
 
@@ -138,7 +134,7 @@ The installed tools are not yet added to the PATH environment variable. To make 
 . $HOME/esp/esp-idf/export.sh
 ```
 
-The output looks like this
+Output
 
 <img src = "./image/exp-var.png">
 </details>
