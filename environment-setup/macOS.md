@@ -2,13 +2,13 @@
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Install prerequisites](#install-prerequisites)
-    - [Install Git, HomeBrew, CMake & Ninja build](#install-git-homebrew-cmake--ninja-build)
-    - [Install Python3](#install-python3)
+  - [Install Git, HomeBrew, CMake & Ninja build](#install-git-homebrew-cmake--ninja-build)
+  - [Install Python3](#install-python3)
 - [Get ESP-IDF](#get-esp-idf)
 - [Set up ESP-IDF-related tools](#set-up-esp-idf-related-tools)
 - [Set up the environment variables](#set-up-the-environment-variables)
-    - [1. Make sure you have the latest version of Bash](#1-make-sure-you-have-the-latest-version-of-bash)
-    - [2. Export environment variables](#2-export-environment-variables)
+  - [1. Make sure you have the latest version of Bash](#1-make-sure-you-have-the-latest-version-of-bash)
+  - [2. Export environment variables](#2-export-environment-variables)
 - [Start an example project](#start-an-example-project)
   - [Connect your device](#connect-your-device)
   - [Build your project](#build-your-project)
@@ -20,7 +20,7 @@
 
 
 # Install prerequisites 
-### Install Git, HomeBrew, CMake & Ninja build
+## Install Git, HomeBrew, CMake & Ninja build
 <details><summary>Details (click to expand...)</summary>
 
 Check your git version 
@@ -53,7 +53,7 @@ brew install ccache
 
 </details>
 
-### Install Python3
+## Install Python3
 <details><summary>Details (click to expand...)</summary>
 
 Check if you already have python3 installed 
@@ -88,7 +88,7 @@ cd ~/esp/esp-idf
 
  
 # Set up the environment variables
-### 1. Make sure you have the latest version of Bash
+## 1. Make sure you have the latest version of Bash
 >When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
 
 <details><summary>Details (click to expand...)</summary>
@@ -142,7 +142,7 @@ exit
 
 </details>
 
-### 2. Export environment variables
+## 2. Export environment variables
 
 <details><summary>Details (click to expand...)</summary>
 The installed tools are not yet added to the PATH environment variable. To make the tools usable from the command line, some environment variables must be set
