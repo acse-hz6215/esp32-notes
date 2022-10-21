@@ -1,8 +1,25 @@
 
-# Install ESP-IDF on macOS
-Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Linux and macOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Install prerequisites](#install-prerequisites)
+    - [Install Git, HomeBrew, CMake & Ninja build](#install-git-homebrew-cmake--ninja-build)
+    - [Install Python3](#install-python3)
+- [Get ESP-IDF](#get-esp-idf)
+- [Set up ESP-IDF-related tools](#set-up-esp-idf-related-tools)
+- [Set up the environment variables](#set-up-the-environment-variables)
+    - [1. Make sure you have the latest version of Bash](#1-make-sure-you-have-the-latest-version-of-bash)
+    - [2. Export environment variables](#2-export-environment-variables)
+- [Start an example project](#start-an-example-project)
+  - [Connect your device](#connect-your-device)
+  - [Build your project](#build-your-project)
+  - [Flash onto the device](#flash-onto-the-device)
+- [Reference](#reference)
 
-## Install prerequisites 
+
+
+
+
+# Install prerequisites 
 ### Install Git, HomeBrew, CMake & Ninja build
 <details><summary>Details (click to expand...)</summary>
 
@@ -49,7 +66,7 @@ brew install python3
 ```
 </details>
 
-## Get ESP-IDF
+# Get ESP-IDF
 Navigate to your installation directory 
 ```bash
 mkdir -p ~/esp
@@ -60,7 +77,7 @@ git clone --recursive https://github.com/espressif/esp-idf.git
 >ESP-IDF will be downloaded into `~/esp/esp-idf`
 
 
-## Set up ESP-IDF-related tools
+# Set up ESP-IDF-related tools
 To install tools for ESP32
 
 ```sh
@@ -70,7 +87,7 @@ cd ~/esp/esp-idf
 > For more tools installation options please refer to their [official document](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
 
  
-## Set up the environment variables
+# Set up the environment variables
 ### 1. Make sure you have the latest version of Bash
 >When exporting environment variables, you make get this warning if our bash version is outdated `WARNING: Failed to load shell autocompletion for bash version: 3.2.57(1)release!` To fix this you need to update your bash
 
@@ -189,3 +206,6 @@ Finally to terminate the process
 ```sh
 Control + ]
 ```
+
+# Reference
+Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Linux and macOS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html)
