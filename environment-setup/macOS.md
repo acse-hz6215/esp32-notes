@@ -1,24 +1,4 @@
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Install prerequisites](#install-prerequisites)
-  - [Install Git, HomeBrew, CMake & Ninja build](#install-git-homebrew-cmake--ninja-build)
-  - [Install Python3](#install-python3)
-- [Get ESP-IDF](#get-esp-idf)
-- [Set up ESP-IDF-related tools](#set-up-esp-idf-related-tools)
-- [Set up the environment variables](#set-up-the-environment-variables)
-  - [1. Make sure you have the latest version of Bash](#1-make-sure-you-have-the-latest-version-of-bash)
-  - [2. Export environment variables](#2-export-environment-variables)
-- [Start an example project](#start-an-example-project)
-  - [Connect your device](#connect-your-device)
-  - [Build your project](#build-your-project)
-  - [Flash onto the device](#flash-onto-the-device)
-- [Reference](#reference)
-
-
-
-
-
 # Install prerequisites 
 ## Install Git, HomeBrew, CMake & Ninja build
 <details><summary>Details (click to expand...)</summary>
