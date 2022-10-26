@@ -23,24 +23,66 @@ Note that when launching the ESP-IDF Command Prompt, it automatically runs `expo
 <img src = "./image/esp-idf-installer-powershell.png" width = "600"> 
 
 ## Start an example project
-ESP-IDF provides a sample project called `hello_world`, navigate to the folder where `hello_world` locates
+ESP-IDF provides a sample project called `hello_world`, launch your ESP-IDF environment and navigate to the folder where `hello_world` locates
 
 ```sh
 cd \Users\<UserName>\esp\esp-idf\examples\get-started\hello_world
 ```
-## Connect Your Device
+
+### Configure your project 
+After you navigate to the `hello_world `directory, set ESP32 as the target, and run the project configuration utility `menuconfig`
+
+```sh
+# existing builds and configurations in the project will be cleared and initialized in this process
+idf.py set-target esp32 
+
+# using this menu to set up project specific variables, 
+# e.g., Wi-Fi network name and password, the processor speed, etc
+idf.py menuconfig
+```
+<img src = "./image/menuconfig.png" width = "500">
+
+
+### Connect your device
 Connect your ESP32 board to the computer and check under which serial port the board is visible
 
+To check your device's COM port, go to `Device Manager -> Ports(COM & LPT)`. Disconnect your board and connect it back, to verify which port disappears from the list and then shows back again
 
-## Build your project
+<img src = "./image/win-serial-port.png" width = "350">
+
+### Build your project
 To build the example project, run
 ```sh 
 idf.py build
 ```
 If succeed, you should see the following output
 
-<img src = "./image/idf-build-windows.png" width = "500">
+<img src = "./image/win-idf-build.png" width = "500">
 
+### Flash onto the device
+Run the following command
+```sh
+idf.py -p (PORT) flash
+```
+Replace `PORT` with your ESP32 board’s USB port name. If the `PORT` is not defined, the idf.py will try to connect automatically using the available USB ports
+
+You should see the following output
+
+<img src = "./image/win-flash-device.png" width = "500">
+
+### Monitor the output
+To check if `hello_world` is indeed running, run
+```sh
+idf.py -p (PORT) monitor 
+```
+Output
+
+<img src = "./image/win-hello-world.png" width = "500">
+
+Finally to terminate the process
+```sh
+Control + ]
+```
 
 # Install ESP-IDF on Windows via WSL2 
 Please refer to Hwan's documentation [doc-tinyml](https://github.com/MACSO-AI/doc-tinyml/blob/main/main.pdf)
