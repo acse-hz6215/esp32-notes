@@ -1,7 +1,10 @@
+
 # Install ESP-IDF on Windows
 - Please refer to ESP-IDF's official documentation [Standard Toolchain Setup for Windows](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html#esp-idf-tools-installer)
 
 - Please also refer to [Mair's video tutorial for installation on Windows](https://learnesp32.com/videos/1/1_%5Bwindows%5D%20installing%20the%20esp-idf)
+
+
 
 ## Get ESP-IDF Tools Installer
  Download one of ESP-IDF Tools Installer
@@ -22,14 +25,14 @@ Note that when launching the ESP-IDF Command Prompt, it automatically runs `expo
 
 <img src = "./image/esp-idf-installer-powershell.png" width = "600"> 
 
-## Start an example project
+# Start an example project
 ESP-IDF provides a sample project called `hello_world`, launch your ESP-IDF environment and navigate to the folder where `hello_world` locates
 
 ```sh
 cd \Users\<UserName>\esp\esp-idf\examples\get-started\hello_world
 ```
 
-### Configure your project 
+## Configure your project 
 After you navigate to the `hello_world `directory, set ESP32 as the target, and run the project configuration utility `menuconfig`
 
 ```sh
@@ -43,14 +46,17 @@ idf.py menuconfig
 <img src = "./image/menuconfig.png" width = "500">
 
 
-### Connect your device
+## Connect your device
 Connect your ESP32 board to the computer and check under which serial port the board is visible
 
 To check your device's COM port, go to `Device Manager -> Ports(COM & LPT)`. Disconnect your board and connect it back, to verify which port disappears from the list and then shows back again
 
 <img src = "./image/win-serial-port.png" width = "350">
 
-### Build your project
+As shown in the picture above, my serial port is COM5
+
+
+## Build your project
 To build the example project, run
 ```sh 
 idf.py build
@@ -59,7 +65,7 @@ If succeed, you should see the following output
 
 <img src = "./image/win-idf-build.png" width = "500">
 
-### Flash onto the device
+## Flash onto the device
 Run the following command
 ```sh
 idf.py -p (PORT) flash
@@ -70,16 +76,16 @@ You should see the following output
 
 <img src = "./image/win-flash-device.png" width = "500">
 
-### Monitor the output
-To check if `hello_world` is indeed running, run
+To check if `hello_world` is indeed running, you can add `monitor` command to monitor the flashing process
 ```sh
-idf.py -p (PORT) monitor 
+idf.py -p (PORT) flash monitor 
 ```
 Output
 
 <img src = "./image/win-hello-world.png" width = "500">
 
-Finally to terminate the process
+Finally to terminate the process, run
+
 ```sh
 Control + ]
 ```

@@ -49,7 +49,7 @@ idf.py fullclean
   - `MakeFile` - useless
   - `sdkconfig` - configuration file, changing the configuration can also be done by using `idf.py menuconfig`
 
-Here's an ESP32 starter template on Github: https://github.com/Mair/esp32-course/tree/master/_2_template/esp32_starter_template
+ ESP32 starter template on Github: https://github.com/Mair/esp32-course/tree/master/_2_template/esp32_starter_template
 
 # Introduction 
 ## Logging

@@ -15,6 +15,7 @@ It's recommended to install the ESP-IDF under the User folder, for example
 >```
 >      C:\Users\<Username>\esp\.espressif
 >```
+To start a new project, open  `Command Pallette` -> `ESP-IDF`:New Project`, you can configure your project choose the template your want to start with
 
 ## For macOS
 There's currently a bug related to ESP-IDF Extension on VSCode, suggest using PlatformIO as a substitution https://github.com/espressif/vscode-esp-idf-extension/pull/821
