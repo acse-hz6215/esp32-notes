@@ -91,4 +91,4 @@ Control + ]
 ```
 
 # Install ESP-IDF on Windows via WSL2 
-Please refer to Hwan's documentation [doc-tinyml](https://github.com/MACSO-AI/doc-tinyml/blob/main/main.pdf)
+Please refer to Hwan's documentation [doc-tinyml]()
